@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NusaMart | Toko Online Modern</title>
+    <meta
+      name="description"
+      content="NusaMart adalah toko online modern untuk kebutuhan sehari-hari, fashion, dan gadget dengan harga terbaik."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <div class="brand-mark">N</div>
+          <span>NusaMart</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a href="#home">Beranda</a>
+          <a href="#shop">Produk</a>
+          <a href="#features">Keunggulan</a>
+          <a href="#reviews">Ulasan</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Cari produk">⌕</button>
+          <button class="cart-btn" aria-label="Keranjang belanja">
+            Keranjang
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Diskon akhir tahun</span>
+            <h1>Belanja kebutuhanmu dengan harga yang lebih smart.</h1>
+            <p>
+              Temukan produk favorit untuk rumah, gaya hidup, teknologi, dan
+              kebutuhan harian dengan kualitas terbaik dan pengiriman cepat.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#shop" class="btn btn-primary">Belanja sekarang</a>
+              <a href="#features" class="btn btn-secondary">Lihat promo</a>
+            </div>
+
+            <ul class="hero-stats">
+              <li><strong>25k+</strong><span>Pengguna aktif</span></li>
+              <li><strong>4.9/5</strong><span>Rating pelanggan</span></li>
+              <li><strong>24 jam</strong><span>Pengiriman cepat</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Produk unggulan">
+            <div class="product-card highlight">
+              <div class="badge">Best Seller</div>
+              <div class="tiny-label">Audio Premium</div>
+              <h3>AirPods Pro</h3>
+              <div class="price-row">
+                <span class="price">Rp2.499K</span>
+                <span class="old-price">Rp3.199K</span>
+              </div>
+              <div class="mini-visual">
+                <div class="earbud"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-strip">
+        <div class="container category-row">
+          <div class="category-item">Elektronik</div>
+          <div class="category-item">Fashion</div>
+          <div class="category-item">Rumah Tangga</div>
+          <div class="category-item">Kecantikan</div>
+          <div class="category-item">Olahraga</div>
+        </div>
+      </section>
+
+      <section class="products" id="shop">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow dark">Produk paling laris</span>
+              <h2>Jelajahi produk favorit kami</h2>
+            </div>
+            <a href="#" class="text-link">Lihat semua</a>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-item" data-name="Smartwatch X10" data-price="899000">
+              <div class="product-image watch"></div>
+              <div class="product-body">
+                <div class="meta-row">
+                  <span class="tag">Elektronik</span>
+                  <span class="rating">★ 4.8</span>
+                </div>
+                <h3>Smartwatch X10</h3>
+                <div class="product-bottom">
+                  <div>
+                    <strong>Rp899K</strong>
+                    <small>Free ongkir</small>
+                  </div>
+                  <button class="add-btn">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-item" data-name="Sneaker Urban Lite" data-price="499000">
+              <div class="product-image sneaker"></div>
+              <div class="product-body">
+                <div class="meta-row">
+                  <span class="tag">Fashion</span>
+                  <span class="rating">★ 4.9</span>
+                </div>
+                <h3>Sneaker Urban Lite</h3>
+                <div class="product-bottom">
+                  <div>
+                    <strong>Rp499K</strong>
+                    <small>Diskon 15%</small>
+                  </div>
+                  <button class="add-btn">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-item" data-name="Lampu LED Smart" data-price="329000">
+              <div class="product-image lamp"></div>
+              <div class="product-body">
+                <div class="meta-row">
+                  <span class="tag">Rumah</span>
+                  <span class="rating">★ 4.7</span>
+                </div>
+                <h3>Lampu LED Smart</h3>
+                <div class="product-bottom">
+                  <div>
+                    <strong>Rp329K</strong>
+                    <small>COD tersedia</small>
+                  </div>
+                  <button class="add-btn">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-item" data-name="Serum Glow Care" data-price="219000">
+              <div class="product-image serum"></div>
+              <div class="product-body">
+                <div class="meta-row">
+                  <span class="tag">Kecantikan</span>
+                  <span class="rating">★ 4.8</span>
+                </div>
+                <h3>Serum Glow Care</h3>
+                <div class="product-bottom">
+                  <div>
+                    <strong>Rp219K</strong>
+                    <small>Baru</small>
+                  </div>
+                  <button class="add-btn">+ Keranjang</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-banner">
+        <div class="container promo-box">
+          <div>
+            <span class="eyebrow">Flash Sale</span>
+            <h2>Hingga 50% untuk produk terpilih</h2>
+          </div>
+          <a href="#shop" class="btn btn-primary">Ambil promo</a>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <div class="section-head center">
+            <span class="eyebrow dark">Kenapa memilih kami</span>
+            <h2>Layanan yang membuat belanja lebih nyaman</h2>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="icon">⚡</div>
+              <h3>Pengiriman Cepat</h3>
+              <p>Kirim dalam 24 jam ke kota besar dengan sistem pengiriman terpercaya.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">🛡️</div>
+              <h3>Produk Asli</h3>
+              <p>Semua item dijamin 100% original dan kualitas premium untuk pelanggan.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">💳</div>
+              <h3>Pembayaran Mudah</h3>
+              <p>Mendukung transfer, e-wallet, dan metode pembayaran yang aman dan cepat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="section-head center">
+            <span class="eyebrow dark">Testimoni pelanggan</span>
+            <h2>Apa kata mereka tentang NusaMart?</h2>
+          </div>
+
+          <div class="review-grid">
+            <blockquote>
+              "Produk datang cepat, kualitas bagus, dan packaging aman. Sudah jadi favorit belanja online saya."
+              <footer>— Rina, Bandung</footer>
+            </blockquote>
+            <blockquote>
+              "Harga sangat bersaing dan customer service responsif. Proses checkout juga gampang banget."
+              <footer>— Budi, Surabaya</footer>
+            </blockquote>
+            <blockquote>
+              "Saya beli gadget dan hasilnya sesuai ekspektasi. NusaMart benar-benar terpercaya."
+              <footer>— Dika, Jakarta</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand footer-brand">
+            <div class="brand-mark">N</div>
+            <span>NusaMart</span>
+          </div>
+          <p>Marketplace pilihan untuk kebutuhan modern dan gaya hidup yang lebih praktis.</p>
+        </div>
+
+        <div>
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#shop">Produk</a></li>
+            <li><a href="#features">Keunggulan</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Hubungi</h4>
+          <ul>
+            <li>Email: hello@nusamart.com</li>
+            <li>WhatsApp: +62 812-3456-7890</li>
+            <li>Jakarta, Indonesia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container copyright">© 2026 NusaMart. Semua hak dilindungi.</div>
+    </footer>
+
+    <div class="toast" id="toast">Produk ditambahkan ke keranjang</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
